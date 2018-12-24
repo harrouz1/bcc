@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "b!"
+var prefix = "-"
 
 
 
@@ -79,7 +79,7 @@ m.sendMessage(args)
 
   
   client.on('message', msg => {
-    if(msg.content === 'b!help')
+    if(msg.content === '-help')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
@@ -97,15 +97,11 @@ m.sendMessage(args)
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
-         .setDescription(`**Help|هيلب
+         .setDescription(`**project server
 
-       b!obc | لأرسال برود كاست للكل
+       -obc | لأرسال برود كاست للكل
 
-       b!bc  |  لأرسال برود كاست للأونلاين
-
-       b!invite | لدعوة البوت الي سيرفرك
-
-       b!support | سيرفر السبورت** `)
+       -bc  |  لأرسال برود كاست للأونلاين**`)
    message.author.sendEmbed(embed)
    
    }
